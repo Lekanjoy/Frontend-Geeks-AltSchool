@@ -1,0 +1,228 @@
+/*
+widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+
+## Colors
+
+### Primary
+
+- Strong cyan: hsl(172, 67%, 45%)
+
+### Neutral
+
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  flex-direction: column;
+  color: hsl(183, 100%, 15%);
+  display: flex;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 70%;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: monospace;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  gap: 3em;
+}
+.cap {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main > div {
+  width: 50%;
+}
+
+.input-elements {
+  margin-top: -1.3em;
+}
+
+button,
+.trans {
+  width: 25%;
+  padding: 1em;
+  display: inline-table;
+  margin: 5px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: transparent;
+}
+
+.teal {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+}
+
+.aqua {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.trans,
+input {
+  background-color: hsl(189, 41%, 97%);
+  border: transparent;
+  color: hsl(183, 100%, 15%);
+}
+
+.second {
+  width: 100%;
+  padding: 9px;
+}
+
+.change {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.two {
+  width: 25em;
+  margin: 0 -10px 0 4px;
+  background-color: hsla(172, 98%, 25%, 0.856);
+}
+.two,
+button:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+@media screen and (max-width: 890px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  main {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: monospace;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  main > div {
+    width: 100%;
+  }
+
+  .cap {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .button-container {
+    width: 100%;
+    display: inline-table;
+  }
+  button,
+  .trans {
+    width: 40%;
+    font-weight: 700;
+    border-radius: 5px;
+    border: transparent;
+  }
+
+  .input-elements {
+    margin-top: -1.2em;
+    justify-items: space-between;
+  }
+
+  .teal {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+  }
+
+  .aqua {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+  .trans,
+  input {
+    background-color: hsl(189, 41%, 97%);
+    border: transparent;
+    color: hsl(183, 100%, 15%);
+    outline: hsl(172, 67%, 45%);
+  }
+
+  .second {
+    padding: 9px;
+    font-size: 24px;
+  }
+
+  .change {
+    padding-right: 7px;
+    border-radius: 7px;
+    margin-top: 15px;
+  }
+
+  .two {
+    width: 24em;
+    margin: 0 -10px 0 4px;
+    background-color: hsla(172, 98%, 25%, 0.856);
+  }
+}
+
+.two,
+button:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.change-container {
+  display: flex;
+  gap: 15em;
+}
+
+.shift {
+  margin-left: 1em;
+}
+
+.tone {
+  color: hsla(172, 98%, 25%, 0.856);
+}
+
+.input-div {
+  position: relative;
+  display: inline-block;
+}
+
+.pic {
+  position: absolute;
+  top: 40%;
+  bottom: 55%;
+  left: 5%;
+}
+
+.trans {
+  outline: none;
+}
+input {
+  text-align: right;
+}

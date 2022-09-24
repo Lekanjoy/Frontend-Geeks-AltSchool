@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCUKATOR</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="cap">
+      spli
+      <br />
+      tter
+    </h1>
+    <main>
+      <div>
+        <label for="bill">Bill</label>
+        <br />
+        <div class="input-div">
+          <img src="./icon-dollar.svg" alt="logo" class="pic" />
+          <input
+            type="number"
+            class="second"
+            placeholder="000"
+            id="input-one"
+          />
+        </div>
+        <p>Select Tip %</p>
+        <div class="button-container">
+          <button id="btn-one" class="btn teal" onclick="tipBtnValue(btnOne)">
+            5%
+          </button>
+          <button id="btn-two" class="btn teal" onclick="tipBtnValue(btnTwo)">
+            10%
+          </button>
+          <button
+            id="btn-three"
+            class="btn teal"
+            onclick="tipBtnValue(btnThree)"
+          >
+            15%
+          </button>
+          <button id="btn-four" class="btn teal" onclick="tipBtnValue(btnFour)">
+            25%
+          </button>
+          <button id="btn-five" class="btn teal" onclick="tipBtnValue(btnFive)">
+            50%
+          </button>
+          <input
+            type="number"
+            class="btn trans"
+            placeholder="Custom"
+            id="btn-custom"
+          />
+        </div>
+
+        <p>Number of People</p>
+        <div class="input-div">
+          <img src="./icon-person.svg" alt="icon" class="pic" />
+          <input type="number" class="second" placeholder="0" id="input-two" />
+        </div>
+      </div>
+
+      <div class="teal change">
+        <div class="change-container">
+          <div>
+            <p>Tip Amount</p>
+            <p class="tone">/person</p>
+          </div>
+          <h2>$ <span id="tip">0.0</span></h2>
+        </div>
+
+        <div class="change-container">
+          <div>
+            <p>Total</p>
+            <p class="tone">/person</p>
+          </div>
+          <h2 class="shift">$ <span id="person">0.0</span></h2>
+        </div>
+
+        <button class="teal two">RESET</button>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
